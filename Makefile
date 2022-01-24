@@ -6,7 +6,7 @@ all: build
 BIBBLE = bibble
 
 _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
-# 	mkdir -p _includes
+	mkdir -p _includes
 	$(BIBBLE) $+ > $@
 
 build: _includes/pubs.html
